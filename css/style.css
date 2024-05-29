@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation {
+  margin-top: 6px;
+  font-family: var(--font1);
+  height: 74px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  font-size: 54px;
+  display: flex;
+  width: 100px;
+  margin-left: 15px;
+  margin-bottom: -15px;
+  padding: 0 5px;
+  padding-top: 22px;
+}
+
+.nav-left span {
+  font-size: 35px;
+  padding-top: 5px;
+}
+
+.nav-left ul {
+  display: flex;
+  align-items: center;
+  margin: 0 77px;
+  font-size: 22px;
+  padding-bottom: 3px;
+}
+.nav-left ul li {
+  list-style: none;
+  margin: 0 14px;
+  font-family: var(--font2);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-left ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-left ul a:hover {
+  color: var(--main-bg-color);
+  font-weight: bolder;
+}
+
+.content {
+  height: 100%;
+  background-color: rgb(207, 194, 194);
+  display: flex;
+  margin-top: 32px;
+  padding: 0px;
+  position: relative;
+}
+
+.content::after {
+  content: "";
+  background-image: url("../img/4444.png");
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  opacity: 0.15;
+  border-radius: 12px;
+  margin-top: -2px;
+  margin-right: -23px;
+}
+
+.content-left {
+  font-family: var(--font1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 49px;
+  
+}
+.content-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 33px;
+}
+
+.content-right img {
+  height: 260px;
+  border: 2px solid black;
+  border-radius: 200px;
+}
+
+.content-wrapper{
+  margin-top: 20px;
+}
+
+.home-articles {
+  /* height: 455px; */
+  padding: 18px;
+  margin-top: 23px;
+  background-color: rgb(184, 217, 230);
+  position: relative;
+}
+
+.year-box {
+  position: absolute;
+  right: 119px;
+  top: 82px;
+  bottom: 82px;
+  width: 158px;
+  height: 152px;
+  font-size: 18px;
+}
+
+.year-box div {
+  margin: 12px 0px;
+}
+.home-article {
+  display: flex;
+  margin: 30px;
+}
+
+.home-article-content {
+  align-self: center;
+  padding: 40px;
+}
+
+.home-article-content a {
+  text-decoration: none;
+  color: black;
+}
+
+.home-article img {
+  width: 230px; /* Set the width */
+  height: 230px;
+}
+
+/* .home-articles{} */
+
+.footer {
+  height: 50px;
+  background-color: var(--main-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.footer p {
+  color: white;
+  justify-content: none;
+  text-decoration: solid;
+}

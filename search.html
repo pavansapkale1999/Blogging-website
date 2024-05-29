@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/toggle.css" />
+    <title>pBlog - Heaven for bloggers</title>
+  </head>
+  <body>
+    <nav class="navigation max-width-1 m-auto">
+      <div class="nav-left">
+        <a href="/">
+          <span><img src="img/pblog.png" width="94px" alt="" /></span>
+        </a>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+        <div class="theme-switch">
+          <input type="checkbox" id="checkbox" aria-label="Toggle Dark Mode" />
+          <label for="checkbox" class="slider-round" aria-hidden="true"></label>
+        </div>
+      <div class="nav-right">
+        <form action="/search.html" method="get">
+          <input
+            class="form-input"
+            type="text"
+            name="query"
+            placeholder="Article Search"
+          />
+          <button onclick="searchArticles()" class="btn">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="max-width-1 m-auto"><hr /></div>
+    <div class="home-articles max-width-1 m-auto font2">
+        <h2 id="searchResultsHeading">Search Results</h2>
+        <div id="searchResults"></div>
+      <div class="home-article">
+        <div class="home-article-img">
+          <img src="img/1.png" alt="article" />
+        </div>
+        <div class="home-article-content font1">
+          <a href="/blogpost.html"
+            ><h3 class="article-title">Diwali is absolutely my favorite time of year.</h3></a
+          >
+
+          <span>Roma Gujarathi</span>
+          <span>07 January | 6 min read</span>
+        </div>
+      </div>
+      <div class="home-article">
+        <div class="home-article-img">
+          <img src="img/2.png" alt="article" />
+        </div>
+        <div class="home-article-content font1">
+          <a href="/blogpost.html"
+            ><h3 class="article-title">Standard vs. Portable Typewriters</h3></a
+          >
+
+          <span>Davis Wilton Bader</span>
+          <span>07 January | 6 min read</span>
+        </div>
+      </div>
+      <div class="home-article">
+        <div class="home-article-img">
+          <img src="img/8.png" alt="article" />
+        </div>
+        <div class="home-article-content font1">
+          <a href="/blogpost.html"
+            ><h3 class="article-title">Review — Is Hacking the System Design Interview Book by Stanley
+              Chang worth it?</h3></a>
+
+          <span>javin paul</span>
+          <span>07 January | 6 min read</span>
+        </div>
+      </div>
+      <div class="home-article">
+        <div class="home-article-img">
+          <img src="img/7.png" alt="article" />
+        </div>
+        <div class="home-article-content font1">
+          <a href="/blogpost.html"
+            ><h3 class="article-title">I’m The Guy Who Started one of the First Social Media Profiles for
+              a Global Brand.</h3></a>
+
+          <span>Tim Fullerton</span>
+          <span>07 January | 6 min read</span>
+        </div>
+      </div>
+      <div class="home-article">
+        <div class="home-article-img">
+          <img src="img/3.png" alt="article" />
+        </div>
+        <div class="home-article-content font1">
+          <a href="/blogpost.html"
+            ><h3 class="article-title">A.P.J.Abdul Kalam- a dispassionate view</h3></a
+          >
+
+          <span>S.R.Praveen</span>
+          <span>07 January | 6 min read</span>
+        </div>
+      </div>
+      <div class="home-article">
+        <div class="home-article-img">
+          <img src="img/4.png" alt="article" />
+        </div>
+        <div class="home-article-content font1">
+          <a href="/blogpost.html"
+            ><h3 class="article-title">This article is about musical composition with vocals.</h3></a
+          >
+
+          <span>Billie Holiday</span>
+          <span>07 January | 6 min read</span>
+        </div>
+      </div>
+      <div class="home-article">
+        <div class="home-article-img">
+          <img src="img/5.png" alt="article" />
+        </div>
+        <div class="home-article-content font1">
+          <a href="/blogpost.html"
+            ><h3 class="article-title">How Does a Nuclear Bomb Work?</h3></a
+          >
+
+          <span>Merry Janson</span>
+          <span>07 January | 6 min read</span>
+        </div>
+      </div>
+      <div class="home-article">
+        <div class="home-article-img">
+          <img src="img/6.png" alt="article" />
+        </div>
+        <div class="home-article-content font1">
+          <a href="/blogpost.html"
+            ><h3 class="article-title">Unveiling Microsoft’s Ambitious AI Endeavor: The MAI-1 Model
+              Poised to Rival ChatGPT, Google Gemini, and More.</h3></a
+          >
+
+          <span>Jackson Luca</span>
+          <span>07 January | 6 min read</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Copyright &copy; 2023-2024 pBlog.com - All Right Reserved</p>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/search.js"></script>
+  </body>
+</html>

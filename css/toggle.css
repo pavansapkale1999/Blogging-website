@@ -1,0 +1,88 @@
+/* Toggle switch styles */
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  margin-left: 370px;
+  width: 60px; /* Adjust width as needed */
+  height: 35px; /* Adjust height as needed */
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider-round {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px; /* Round slider button */
+}
+
+.slider-round:before {
+  position: absolute;
+  content: "";
+  height: 26px; /* Adjust height as needed */
+  width: 26px; /* Adjust width as needed */
+  left: 4px; /* Position slider button */
+  bottom: 4px; /* Position slider button */
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%; /* Round slider button */
+}
+
+input:checked + .slider-round {
+  background-color: #014f8f; /* Set background color when switched on */
+}
+
+input:checked + .slider-round:before {
+  transform: translateX(26px); /* Move slider button to the right */
+}
+
+/* Light mode styles */
+body.day-mode {
+  background-color: #fff;
+  color: #222;
+}
+
+.nav-left ul li a,
+.nav-right .form-input,
+.home-articles h2,
+.home-article-content,
+.footer p {
+  color: #222;
+}
+
+.theme-switch .slider-round {
+  background-color: #ccc;
+}
+
+.home-article {
+  background-color: #f9f9f9;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode .nav-left ul li a,
+.dark-mode .nav-right .form-input,
+.dark-mode .home-articles h2,
+.dark-mode .home-article-content,
+.dark-mode .footer p {
+  color: #fff;
+}
+
+.dark-mode .theme-switch .slider-round {
+  background-color: #444;
+}
+
+.dark-mode .home-article {
+  background-color: #333;
+}
